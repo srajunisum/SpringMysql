@@ -32,4 +32,11 @@ public class MainController {
 		// This returns a JSON or XML with the users
 		return userRepository.findAll();
 	}
+	@RequestMapping(value="/all",  method = RequestMethod.GET)
+	public @ResponseBody Iterable<User> getAllUser() {
+		// This returns a JSON or XML with the users
+		return userRepository.findAll();
+	}
+	
+	
 }
